@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Very-Dark-Magenta: hsl(300, 43%, 22%);
+    --Soft-Pink: hsl(333, 80%, 67%);
+    --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+    --Light-Grayish-Magenta: hsl(0, 0%, 84%);
+    --White: hsl(0, 0%, 100%);
+
+}
+
+.bg {
+    display: none;
+}
+
+body {
+    padding: 100px 15px;
+    text-align: center;
+    font-family: 'Leauge Spartan', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+.mainContent h3 {
+    color: var(--Very-Dark-Magenta);
+    font-size: 3rem;
+    font-weight: 750;
+    text-align: center;
+}
+
+.mainPara {
+    color: var(--Dark-Grayish-Magenta);
+}
+
+.reviews-1 {
+    padding: 0;
+}
+
+.reviews-1 p {
+    color: var(--Very-Dark-Magenta);
+    font-size: 1.2rem;
+}
+
+ul li {
+    background-color: var(--Light-Grayish-Magenta);
+    margin: 15px;
+    padding: 18px 40px;
+    text-align: center;
+    font-weight: 700;
+    color: var(--Very-Dark-Magenta);
+    border-radius: 10px;
+}
+
+/* LOWER REVIEWS */
+
+.lowerReview {
+    padding: 25px 20px;
+    background-color: var(--Very-Dark-Magenta);
+    border-radius: 10px;
+    margin: 20px;
+    color: var(--Light-Grayish-Magenta);
+
+}
+
+.verifiedReview {
+    display: flex;
+}
+
+.verifiedReview img {
+
+    border-radius: 100%;
+    margin-right: 15px;
+    width: 20%;
+    height: 20%;
+}
+
+.verifiedReview p {
+    color: white;
+}
+
+.verifiedReview span {
+    color: var(--Soft-Pink);
+}
+
+/* Responsive */
+
+@media (min-width:440px) {
+
+    body {
+        padding: 100px 50px;
+    }
+
+    .lowerReview img {
+        width: 10%;
+        height: 10%;
+        margin-bottom: 20px;
+    }
+
+}
+
+@media (min-width:1024px) {
+
+    body {
+        padding: 150px 100px;
+    }
+
+    .star {
+        display: inline;
+    }
+    .bg {
+        display: none;
+    }
+
+    .mainTexts {
+        width: 50vw;
+    }
+
+    .upperReviews {
+        display: flex;
+    }
+
+    .mainTexts {
+        width: 50%;
+        text-align: left;
+        padding-right: 0px;
+    }
+
+    .mainTexts h3 {
+        text-align: left;
+        /* padding-right: 200px; */
+        font-weight: 800;
+        font-size: 2.8rem;
+    }
+
+
+    .reviews-1 li {
+        padding: 10px 100px 3px 20px;
+        width: max-content;
+        position: relative;
+        left: 40px;
+    }
+
+    .review-1-img {
+        margin-right: 20px;
+    }
+
+    .reviews-1 li:nth-child(2) {
+        position: relative;
+        left: 80px;
+    }
+
+    .reviews-1 li:last-child {
+        position: relative;
+        left: 120px;
+    }
+
+    .lowerReview img {
+        width: 8%;
+    }
+}
+
+@media (min-width:1440px) {
+
+    .bg {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        background-repeat: no-repeat;
+
+    }
+
+    .mainTexts h3 {
+        padding-right: 130px;
+        font-size: 3.5rem;
+    }
+
+    .mainTexts p {
+        padding-right: 200px;
+        font-size: 1.3rem;
+        margin-bottom: 80px;
+    }
+
+    .lowerReviews {
+        display: flex;
+    }
+
+    .verifiedReview p {
+        font-size: 1.1rem;
+        padding-left: 0;
+    }
+
+    .lowerReview p {
+        padding: 0px 50px;
+        font-size: 1.1rem;
+    }
+
+    .lowerReviews img {
+        width: 12%;
+        margin-right: 0px;
+    }
+
+    .lowerReview:nth-child(2) {
+        position: relative;
+        top: 20px;
+    }
+
+    .lowerReview:last-child {
+        position: relative;
+        top: 40px;
+    }
+
+}
